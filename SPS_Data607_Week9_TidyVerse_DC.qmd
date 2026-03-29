@@ -1,6 +1,6 @@
 ---
 title: "SPS_Data607_Week9_TidyVerse_DC"
-format: pdf
+format: html
 editor: visual
 author: "David Chen"
 ---
@@ -25,7 +25,7 @@ Your task here is to **Create an Example.**  Using one or more TidyVerse packa
 
 *These rates, normally quoted as currency units per U.S. dollar, are reported daily to the Fund by the issuing central bank. Rates are normally reported for members whose currencies are used in Fund financial transactions (see Financial Transaction Plan).*
 
-CSV file:<https://raw.githubusercontent.com/dyc-sps/-dyc-sps-SPS_Data607_Week6/refs/heads/main/IMF_currencies_exchange_rate.csv>
+CSV file:<https://raw.githubusercontent.com/dyc-sps/SPS_Data607_Week9_TidyVerse/refs/heads/main/IMF_currencies_exchange_rate.csv>
 
 ```{r}
 library(tidyr)
@@ -34,7 +34,7 @@ library(tidyverse)
 ```
 
 ```{r}
-url <- "https://raw.githubusercontent.com/dyc-sps/-dyc-sps-SPS_Data607_Week6/refs/heads/main/IMF_currencies_exchange_rate.csv"
+url <- "https://raw.githubusercontent.com/dyc-sps/SPS_Data607_Week9_TidyVerse/refs/heads/main/IMF_currencies_exchange_rate.csv"
 df_imf_rate <- read.csv(url)
 head(df_imf_rate)
 ```
